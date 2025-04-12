@@ -2,40 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome | My Portfolio</title>
-    <link rel="stylesheet" href="/static/base.css">
-    <link rel="stylesheet" href="/static/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Welcome to Hardware Store</title>
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="fade-in-up">Hi, I'm Victory</h1>
-            <p class="fade-in-up delay-1">Software Engineer | Web Developer | Python Automator</p>
-            <a href="#services" class="cta-button fade-in-up delay-2">Explore My Work</a>
-        </div>
-    </header>
 
-    <main class="content">
-        <section id="services" class="services">
-            <h2 class="section-title">What I Do</h2>
-            <div class="service-grid">
-                <div class="service-card slide-in-left">
-                    <h3>Web Development</h3>
-                    <p>Clean, responsive, backend-powered websites built with Python, Flask, and modern tools.</p>
-                </div>
-                <div class="service-card slide-in-up">
-                    <h3>Automation Scripts</h3>
-                    <p>Automate boring tasks: data scraping, PDF parsing, reporting tools, and more.</p>
-                </div>
-                <div class="service-card slide-in-right">
-                    <h3>Custom Software</h3>
-                    <p>I build software tailored to your logic — fast, portable, and easy to use.</p>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Crisantos Hardware Store</h1>
+        <p>Your one-stop shop for all your hardware needs. Find tools, machinery, accessories, and more!</p>
+    </header>
+    <!-- Navigation -->
+
+    <!-- Main Section -->
+    <main>
+
+        <!-- Intro Section -->
+        <section class="intro">
+            <h2>Shop Our Bestselling Products</h2>
+            <p>Browse through our most popular items and get amazing deals for your next project.</p>
+        </section>
+
+        <!-- Product Showcase Section -->
+        <section class="product-showcase">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="assets/images/hammer.jpg" alt="Hammer" class="product-img">
+                <h3>Heavy Duty Hammer</h3>
+                <p class="price">$15.99</p>
+                <p class="description">A strong, durable hammer perfect for all your construction and repair needs.</p>
+                <a href="product-details.html" class="btn">View Product</a>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="assets/images/screwdriver.jpg" alt="Screwdriver" class="product-img">
+                <h3>Precision Screwdriver Set</h3>
+                <p class="price">$25.99</p>
+                <p class="description">A complete set of precision screwdrivers for all your small repairs and assembly tasks.</p>
+                <a href="product-details.html" class="btn">View Product</a>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="assets/images/drill.jpg" alt="Cordless Drill" class="product-img">
+                <h3>Cordless Electric Drill</h3>
+                <p class="price">$79.99</p>
+                <p class="description">A versatile cordless drill with multiple speed settings and a long-lasting battery.</p>
+                <a href="product-details.html" class="btn">View Product</a>
+            </div>
+        </section>
+
+        <!-- Login and Signup Section -->
+        <section class="auth">
+            <h2>Login or Signup</h2>
+            <div class="dropdown">
+                <button class="dropbtn">Buyer Options</button>
+                <div class="dropdown-content">
+                    <a href="templates/login.html">Login</a>
+                    <a href="templates/signup.html">Sign Up</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="/static/js/scrollAnimations.js"></script>
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us at: <a href="mailto:contact@hardwarestore.com">contact@hardwarestore.com</a></p>
+        <p>© 2025 Hardware Store - All Rights Reserved</p>
+    </footer>
+   
 </body>
 </html>

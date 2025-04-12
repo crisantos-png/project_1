@@ -2,26 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="/static/base.css">
-    <link rel="stylesheet" href="/static/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Crisantos Hardware Store</title>
+    <!-- Corrected path to the CSS file -->
+    <link rel="stylesheet" href="../css/styles.css"> 
 </head>
 <body>
-    <div class="container">
-        <h2>Login</h2>
 
-        {% if message %}
-        <div class="message error">{{ message }}</div>
-        {% endif %}
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">
+        <a href="../index.html">Crisantos Hardware Store</a> <!-- Corrected the link to the homepage -->
+    </div>
+</nav>
 
-        <form action="/login" method="POST">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
+<!-- Login Form Section -->
+<section class="login-section">
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        
+        <!-- Login Form -->
+        <form action="#" method="POST" id="login-form">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+
+            <div class="form-action">
+                <button type="submit">Login</button>
+            </div>
         </form>
 
-        <p class="link">Don't have an account? <a href="/signup">Sign up</a></p>
+        <!-- Register Link -->
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p> <!-- Corrected link to signup -->
     </div>
+</section>
+
 </body>
 </html>
